@@ -1,5 +1,9 @@
 public class foo {
     public static void main(String[] args) {
-        System.out.println("hello world");
+        try {
+            System.out.println("hello world");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
